@@ -1,0 +1,181 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f4d03f;
+}
+
+/* Full Page Sections */
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* About Section Styling */
+.section h1 {
+    margin-bottom: 10px;
+}
+
+.section p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Projects Section */
+#repo-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamically adjusts between 2-3 columns */
+    gap: 20px;
+    padding: 0;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Individual Repo Box */
+#repo-list li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Repo Name */
+#repo-list h3 {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
+
+/* README Preview */
+.repo-readme {
+    font-size: 14px;
+    color: #ddd;
+    margin: 10px 0;
+    max-width: 90%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+/* Divider Between README and Language Stats */
+.divider {
+    width: 80%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    margin: 10px 0;
+}
+
+/* Language Statistics */
+.repo-languages {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Language Title */
+.repo-languages strong {
+    display: block; /* Ensures "Languages:" appears on its own line */
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Language Badge */
+.lang-badge {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+/* Repo Button */
+.repo-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24292e;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.repo-button:hover {
+    background-color: #444d56;
+}
+
+/* Repo Icon inside Button */
+.repo-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
